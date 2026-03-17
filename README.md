@@ -25,277 +25,299 @@ webtechnologie/
 - Zet je Javascript file steeds in strict mode (`"use strict"`);
 - Volg de [Coding Guidelines](https://apwt.gitbook.io/webtechnologie/coding-guidelines)
 
-## oefening 1: hello world!
-
-### leerdoelen
-
-* een eigen JS-script kunnen uitvoeren in de browser
-* console.log gebruiken
-
-### functionele analyse
-Het script gaat in de console van de browser de tekst `Hello world!` weergeven.
-
-### technische analyse
-Maak een script.js-bestand aan. Koppel dit bestand aan jouw HTML-pagina (index.html) door middel van het `<script>`-element.
-
-Maak een variabele aan met daarin de tekst "Hello world!".
-
-Gebruik een `console.log`-statement om de inhoud van de variabele uit te lezen in de console van de browser.
-
-### voorbeeldinteractie
-![voorbeeldinteractie](./voorbeeldinteractie-hello-world.avif)
-
-## oefening 2: teksten uitlezen
+## Oefening 1: Hello World!
 
 ### Leerdoelen
 
-* console.log gebruiken
-* string expressies
-
-### functionele analyse
-Het programma laat de informatie van de programmeur (jouw eigen informatie) zien in de console.
-
-### technische analyse
-Plaats jouw naam, leeftijd, e-mailadres en klasgroep in een variabele.
-
-Gebruik vier `console.log`-statements om de informatie van de programmeur te laten zien in de console.
-
-Tip: Gebruik string-manipulatie om de voorvoegsels (de woorden naam, leeftijd, e-mail en klasgroep) voor de variabele te plaatsen.
-
-### voorbeeldinteractie
-![voorbeeldinteractie](./voorbeeldinteractie-persoonsgegevens.avif)
-
-## oefening 3: getallen uitlezen
-
-### Leerdoelen
-
-* console.log gebruiken
-* getallen gebruiken
-
-### functionele analyse
-Het programma laat de berekende leeftijd van de programmeur (jouw eigen informatie) zien in de console.
-
-### technische analyse
-Plaats jouw **geboortejaar** in een variabele.
-
-Bereken jouw leeftijd o.b.v. het jaartal van dit jaar en de inhoud van de variabele. Het is niet erg als je er een jaar naast zit omdat je dit jaar nog moet verjaren.
-
-Lees enkel het resulaat uit met 1 `console.log`-statement.
-
-### voorbeeldinteractie
-
-![voorbeeldinteractie](./voorbeeldinteractie-verjaardag.avif)
-
-## oefening 4: BMI berekenen
-
-### leerdoelen
-
-* werken met variabelen
-* expressies toevoegen
-* console.log gebruiken
-
-### functionele analyse
-BMI berekenen aan de hand van hoogte en gewicht
-
-### technische analyse
-Maak een variabele `myWeight` en `myLength` waar je het gewicht in kg en de lengte in meter bijhoudt. Maak vervolgens een variabele `myBmi` met de waarde van je BMI. Je rekent deze als volgt uit:
-
-![formule BMI](./formule-bmi.png)
-
-Je kan een getal afronden door [Number.toFixed()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) te gebruiken (bv. result.toFixed(2)).
-
-### voorbeeldinteractie
-[voorbeeldinteractie](./voorbeeldinteractie-bmi.avif)
-
-## oefening 5: bmi-namen
-
-### leerdoelen
-
-* variabelen
-* expressies
-* string expressies
-* console.log
-
-### functionele analyse
-BMI berekenen aan de hand van hoogte en gewicht voor twee personen
-
-### technische analyse
-Pas de oefening over BMI aan zodat er een gewicht en een lengte variabele bestaat voor twee verschillende personen. Maak ook een variabele aan die de naam van de persoon bevat.
-
-Toon de naam van de persoon met zijn bijbehorende BMI op het scherm.
-
-### voorbeeldinteractie
-![voorbeeldinteractie](./voorbeeldinteractie-bmi-2-personen.avif)
-
-
-## oefening 6: bmi-namen uitbreiding
-
-### leerdoelen
-
-* `Number.toFixed()` gebruiken
-
-### functionele analyse
-Het programma rondt de BMI af tot een geheel getal
-
-### technische analyse
-Kopieer jouw oplossing van de vorige oefening.
-
-Zorg ervoor dat de BMI deze keer afgerond is door `Number.toFixed()` te gebruiken.
-
-### voorbeeldinteractie
-![voorbeeldinteractie](./voorbeeldinteractie-bmi-afgerond.avif)
-
-## oefening 7: interest
-
-### leerdoelen
-
-* stringinterpolatie
-* machtsverheffing
-
-### functionele analyse
-Je programma toont hoe veel je huidig bezit waard zal zijn over een vast aantal jaar, indien je een vaste rentevoet toepast.
-
-### technische analyse
-In je programma hou je je startbezit bij, de rentevoet en het aantal jaren. Je mag deze getallen in je code zetten.
-
-De rentevoet bepaalt met welke hoeveelheid je bezit op een jaar stijgt. Bijvoorbeeld, als je rentevoet 2% is en je startbedrag is 100 euro:
-
-* na één jaar bezit je 102 euro (er is 2% van 100 bij gekomen)
-* na twee jaar bezit je 104,04 euro (er is 2% van 102 bij gekomen)
-* enzovoort
-
-Rond het eindbedrag af naar een geheel getal.
-
-**Hint**: eindsaldo = startsaldo \* ( 1 + rente)^looptijd
-
-### voorbeeldinteractie
-![voorbeeldinteractie rentevoet](./voorbeeldinteractie-rentevoet.avif)
-
-## oefening 8: uren
-
-### leerdoelen
-
-* gebruik maken van modulo
-
-### functionele analyse
-Je programma werkt als de kleine wijzer van een klok.
-
-### technische analyse
-In je programma maak je twee variabelen: één voor het huidige uur, één voor het aantal uur dat je hierbij wil optellen. Je hoeft hierbij de systeemklok niet te raadplegen. Vul gewoon een uur naar keuze in.
-
-Je programma toont dan hoe laat het zal zijn als je de som maakt.
-
-Let op: de klok telt maar 24 uur. Wat doe je als je hierboven gaat?
-
-### voorbeeldinteractie
-![voorbeeldinteractie](./voorbeeldinteractie-uren.avif)
-
-## oefening 9: wisselgeld
-
-### Leerdoelen
-
-* const gebruiken
-* Math.ceil gebruiken
-* expressies
-* stringinterpolatie
-
-### functionele analyse
-Je programma geeft weer hoeveel briefjes van 50 euro je nodig hebt om een bepaald bedrag te kunnen betalen. Het geeft ook weer wat het wisselgeld dan is.
-
-### technische analyse
-Maak een constante `amountToPay` aan dat het te betalen bedrag bevat.
-
-Bereken het aantal briefjes dat nodig is door het te betalen bedrag te delen door 50 en dit naar boven af te ronden. Zet het resultaat in een nieuwe constante `numberOf50s`.
-
-**Hint:** Zoek even op het internet op hoe je getallen naar boven en naar beneden afrondt!
-
-Bereken het wisselgeld en plaats het in een 3de constante `change`.
-
-Print deze waarden af gebruikmakende van stringconcatenatie of stringinterpolatie.
-
-### voorbeeldinteractie
-![voorbeeldinteractie](./voorbeeldinteractie-wisselgeld.avif)
-
-## oefening 10: lotto
-
-### leerdoelen
-
-* functionaliteit van strings (substring, replaceAll)
-
-### functionele analyse
-Haal de lottocijfers uit een tekst en geef ze op een overzichtelijke manier weer (gescheiden door een pipe-symbool `|`).
-
-```javascript
-let text =
-  "De winnende lottonummers van deze week: 05,09,13,18,27,44. Proficiat aan alle deelnemers.";
-```
-
-### technische analyse
-Haal alle lottonummers uit bovenstaande tekst en zet ze in de varabele `lottoNumbers`.
-
-Vervang de komma's door het pipe-symbool | en zet deze output in de variabele `formattedLottoNumbers`. Log vervolgens deze variabele. Je mag veronderstellen dat de cijfers genoteerd zijn zoals in het voorbeeld (met leidende `0` indien kleiner dan 10).
-
-### voorbeeldinteractie
-![voorbeeldinteractie](./voorbeeldinteractie-lotto.avif)
-
-## oefening 11: name-from-mail
-
-### leerdoelen
-
-* functionaliteit van strings (substring, indexOf, replace, toUpperCase)
-* string-interpolatie
+- String interpolatie
+- Beslissingen maken (conditionals)
 
 ### Functionele analyse
-Het programma toont het gedeelte van de e-mailadres dat de naam voorstelt.
 
-### technische analyse
-Het e-mailadres kan je in een variabele `email` plaatsen.
+Het programma leest een naam, achternaam en leeftijd in en toont de informatie enkel als de invoer correct is.
 
-We veronderstellen dat de variabele een juist e-mailadres bevat. Het e-mailadres zal zich altijd in het ap.be domein bevinden.
+### Technische analyse
 
-### voorbeeldinteractie
-![voorbeeldinteractie](./voorbeeldinteractie-naam-uit-mail.avif)
+Schrijf JavaScript dat:
 
-## oefening 12: short-name
+1. Drie variabelen inleest: voornaam, achternaam en leeftijd.
+2. Controleert dat naam en achternaam niet leeg zijn.
+3. Controleert dat de leeftijd tussen 12 en 60 jaar ligt.
+4. Geeft passende meldingen bij ongeldige invoer:
+    - **Naam/Achternaam ontbreekt:** "Vul zowel voornaam als achternaam in!"
+    - **Leeftijd niet tussen 12 en 60:** "U behoort niet tot de gezochte leeftijdsklasse!"
+5. Vormt de boodschap correct en toont deze met `console.log()`.
 
-### leerdoelen
+## Oefening 2: Schrikkeljaar
 
-* functionaliteit van strings (indexOf, replace)
-* string-interpolatie
+#### Leerdoelen
 
-### functionele analyse
-Je programma toont je voor en achternaam. Je voornaam moet afgekapt worden zodat enkel de eerste letter zichtbaar is. Achter deze letter moet een punt komen.
+- Beslissingen maken
 
-Voor- en achternaam moeten getoond met in het begin een hoofdletter.
+#### Functionele analyse
 
-### technische analyse
-Je voorziet twee variabelen voor voor- en achternaam. Daarna zorg je ervoor dat je enkel de eerste letter van de voornaam zichtbaar is.
+De website bevat een invoerveld voor een jaartal en jouw programma bepaalt of het een schrikkeljaar is.
 
-Let er op dat de variabelen ook zonder hoofdletters kunnen ingegeven worden.
+#### Technische analyse
 
-Je kan deze string opbouwen aan de hand van stringinterpolatie.
+1. Een variabele bevat het jaartal.
+2. Het programma bepaalt of het een schrikkeljaar is volgens de regels:
+    - Een jaar is een schrikkeljaar als het deelbaar is door **4**,
+    - Behalve als het deelbaar is door **100**, tenzij het ook deelbaar is door **400**.
+3. Zet volgende flowchart om in code: ![flowchart](./flowchart-schrikkeljaar.png)
 
-### voorbeeldinteractie
-![voorbeeldinteractie](./voorbeeldinteractie-korte-naam.avif)
+## Oefening 3: Simpele Rekenmachine (if-statements)
 
-## oefening 13: text-box
+#### Leerdoelen
 
-### leerdoelen
+- Beslissingen
+- Geneste `if`-statements
 
-* functionaliteit strings (replace)
-* escapen van bepaalde karakters
+#### Functionele analyse
 
-### functionele analyse
-Je programma toont een stuk tekst in je console in een tekstvak
+Het programma voert een eenvoudige berekening uit met twee getallen en een operator (`+`, `-`, `*`, `/`).
 
-### technische analyse
-Je plaatst het stuk tekst in een variabele genaamd `text`.
+#### Technische analyse
 
-Maak met de karakters `/` - en `\` een tekstvak.
+1. Twee variabelen bevatten de getallen.
+2. Een derde variabele bevat de operator.
+3. Gebruik `if`-statements om de juiste berekening uit te voeren.
+4. Voer een controle uit zodat er niet door **0** wordt gedeeld.
+5. Toon een foutmelding bij een ongeldige operator.
 
-Het stuk tekst moet altijd in het tekstvak passen. Je kan de lengte opvragen van de variabele tekst en er voor zorgen dat de karakters herhaald worden.
+## Oefening 4: Simpele Rekenmachine (switch-case)
 
-Zorg ervoor dat je maar 1 console.log statement gebruikt. Je zal dus moeten gebruik maken van newlines.
+#### Leerdoelen
 
-### voorbeeldinteractie
-![voorbeeldinteractie](./voorbeeldinteractie-text-box.avif)
+- Beslissingen
+- Gebruik van `switch`
+
+#### Functionele analyse
+
+Zelfde opdracht als oefening 3, maar nu met een `switch`-statement.
+
+#### Technische analyse
+
+1. Gebruik een `switch`-constructie voor de operator-keuze.
+2. Controleer dat delen door **0** niet gebeurt.
+3. Toon een foutmelding bij een ongeldige operator.
+
+## Oefening 5: Days, Hours and Minutes
+
+#### Leerdoelen
+
+- Gebruik van de **modulo-operator**
+
+#### Functionele analyse
+
+Het programma simuleert een klok die een tijdstip berekent na optelling van een bepaalde duur.
+
+#### Technische analyse
+
+1. De gebruiker voert een **startuur** en **startminuten** in.
+2. Twee extra variabelen bevatten de uren en minuten die moeten worden opgeteld.
+3. Controleer dat alle invoervelden ingevuld zijn.
+4. Bereken het nieuwe tijdstip:
+    - **Minuten overschrijden 60?** → Tel extra uren op.
+    - **Uren overschrijden 24?** → Bereken hoeveel dagen erbij komen.
+5. Geef de output correct weer:
+    - "Dit tijdstip valt nog op dezelfde dag."
+    - "Dit is het tijdstip **1 dag later**."
+    - "Dit is het tijdstip **X dagen later**."
+6. Gebruik **modulo (`%`)** en `Math.floor()` voor de berekening.
+
+## Oefening 6: Cijfer omzetten naar tekst
+
+### Leerdoelen
+- Switch-statements
+- Beslissingen
+
+### Functionele analyse
+Een student krijgt een cijfer (0-10). Het programma zet dit cijfer om in een tekstuele beoordeling.
+
+### Technische analyse
+- Lees een cijfer in een variabele.
+- Gebruik een switch-statement om het cijfer om te zetten naar:
+    - 0-2: "Zeer slecht"
+    - 3-4: "Onvoldoende"
+    - 5-6: "Voldoende"
+    - 7-8: "Goed"
+    - 9-10: "Uitstekend"
+- Als het cijfer buiten de 0-10 range ligt, geef dan een foutmelding.
+- Toon het resultaat in de console.
+
+## Oefening 7: Omrekenen van graden
+
+### Leerdoelen
+- Functies
+- Rekenkundige operaties
+
+### Functionele analyse
+Schrijf een programma dat temperaturen kan omrekenen tussen Celsius en Fahrenheit.
+
+### Technische analyse
+- Vraag de gebruiker om een temperatuur en een eenheid (C of F).
+- Gebruik een functie die:
+    - Celsius omzet naar Fahrenheit met de formule: (C × 9/5) + 32
+    - Fahrenheit omzet naar Celsius met de formule: (F - 32) × 5/9
+- Toon de omgezette waarde in de console.
+- Geef een foutmelding als de eenheid niet correct is ingevoerd.
+
+## Oefening 8: Getal raden
+
+### Leerdoelen
+- Beslissingen
+- Willekeurige getallen
+
+### Functionele analyse
+**Kies** zelf een getal tussen 1 en 10 en sla het op in een variabele `answer`. De gebruiker moet raden welk getal het is.
+
+### Technische analyse
+- Genereer een willekeurig getal tussen 1 en 10.
+- Vraag de gebruiker om een gok (simuleer dit met een variabele).
+- Controleer of het getal juist is:
+    - Zo ja, toon: "Gefeliciteerd, je hebt het juiste getal geraden!"
+    - Zo nee, toon: "Helaas, het juiste getal was X."
+- Toon het resultaat in de console.
+
+## Oefening 9: Willekeurig getal
+
+### Leerdoelen
+- Willekeurige getallen
+
+### Functionele analyse
+**Genereer** een willekeurig getal tussen 1 en 10 en sla het op in een variabele `answer`. De gebruiker moet raden welk getal het is.
+
+### Technische analyse
+- Genereer een willekeurig getal tussen 1 en 10 en sla deze op in een variabele "answer".
+- Vraag de gebruiker om een gok (simuleer dit met een variabele).
+- Controleer of het getal juist is:
+    - Zo ja, toon: "Gefeliciteerd, je hebt het juiste getal geraden!"
+    - Zo nee, toon: "Helaas, het juiste getal was X."
+- Toon het resultaat in de console.
+
+**Hint**: Om een willekeurig getal te genereren kun je gebruik maken van de `Math.random()` functie. Deze functie zal altijd een kommagetal tussen 0 en 1 teruggeven (soms exact 0, maar nooit exact 1). Met de volgende functie kun je dit willekeurig kommagetal omzetten naar een geheel getal tussen twee getallen: `Math.floor(Math.random() * (maximumGetal - minimumGetal) + minimumGetal)`.
+
+Zorg dat je deze formule begrijpt. Bekijk hiervoor wat gebeurt als `Math.random()` de zijn kleinste en grootste mogelijke waarden aanneemt.
+
+## Oefening 10: Maaltafelgenerator
+
+### Leerdoelen
+
+- Werken met een for-loop
+- Wiskundige bewerkingen
+- Variabelen declareren met let en const
+- Werken met controlestructuren
+
+### Functionele analyse
+
+Je programma genereert op basis van een hardgecodeerde waarde een maaltafelreeks voor een bepaalde maaltafel met een vast aantal iteraties.
+
+### Technische analyse
+
+- Declareer een const genaamd `baseNumber` (het getal dat we telkens gaan vermenigvuldigen) en ken hier een getal aan toe.
+- Declareer een const genaamd `numberOfIterations` (de lengte van de maaltafel) en ken hier een getal aan toe.
+- Gebruik een stringvariabele om de maaltafel bij te houden.
+- Gebruik een for-loop om de maaltafelreeks op te bouwen en voeg elk resultaat toe aan de string, gescheiden door een ", ".
+- Print de maaltafel uit in de console.
+
+## Oefening 11: Raster Generator
+
+### Leerdoelen
+
+- Werken met een for-loop
+- Werken met strings
+- Variabelen declareren met let en const
+
+### Functionele analyse
+
+Je programma genereert een raster van kruisjes op basis van hardgecodeerde waarden.
+
+### Technische analyse
+
+- Declareer een const `columns` (kolommen) en ken hier een getal aan toe.
+- Declareer een const `rows` (rijen) en ken hier een getal aan toe.
+- Gebruik een for-loop om de rijen te doorlopen.
+- Gebruik een geneste for-loop om de kolommen te doorlopen.
+- Print elke rij met kruisjes (`X`), gescheiden door een spatie.
+
+---
+
+## Oefening 12: Raad het Getal
+
+### Leerdoelen
+
+- Werken met een do-while-loop
+- Werken met getallen
+- Werken met controlestructuren
+
+### Functionele analyse
+
+Het programma laat de gebruiker een getal raden tussen 0 en 30. De invoer is hardcoded en wordt gecontroleerd in een loop.
+
+### Technische analyse
+
+- Stel een variabele `secretNumber` in op een vaste waarde.
+- Gebruik een array met hardgecodeerde gokpogingen.
+- Gebruik een do-while-loop om de ingevoerde waarde te controleren.
+- Geef aan of het getal hoger of lager moet zijn.
+- Stop zodra het juiste getal geraden is.
+
+## Oefening 13: Som van Even Getallen
+
+### Leerdoelen
+
+- Werken met een for-loop
+- Wiskundige bewerkingen
+- Variabelen declareren met let en const
+
+### Functionele analyse
+
+Je programma berekent de som van alle even getallen tot en met een bepaalde hardgecodeerde grens.
+
+### Technische analyse
+
+- Declareer een const `limit` (de grens) en ken hier een getal aan toe.
+- Declareer een variabele om de som bij te houden.
+- Gebruik een for-loop om door de getallen te itereren.
+- Controleer of het getal even is en tel het op bij de som.
+- Print de uiteindelijke som uit.
+
+## Oefening 14: Aftellen
+
+### Leerdoelen
+
+- Werken met een while-loop
+- Werken met aftellussen
+- Variabelen declareren met let en const
+
+### Functionele analyse
+
+Je programma telt af vanaf een hardcoded startwaarde tot nul en print bij elke stap een melding.
+
+### Technische analyse
+
+- Declareer een const `initialValue` (de startwaarde) en ken hier een getal aan toe.
+- Gebruik een while-loop om af te tellen.
+- Print bij elke iteratie het huidige getal.
+- Stop zodra het getal nul bereikt.
+
+
+## Oefening 15: Fibonacci-reeks
+
+### Leerdoelen
+
+- Werken met loops
+- Werken met arrays
+- Variabelen declareren met let en const
+
+### Functionele analyse
+
+Je programma genereert de eerste N getallen van de Fibonacci-reeks op basis van een hardcoded waarde.
+
+### Technische analyse
+
+- Declareer een const `numberOfGeneratedNumbers` (het aantal te genereren getallen voor het programma stopt) en ken hier een getal aan toe.
+- Gebruik een array om de Fibonacci-getallen op te slaan.
+- Gebruik een loop om de reeks op te bouwen.
+- Print de reeks uit in de console.
