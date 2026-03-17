@@ -50,15 +50,15 @@ Schrijf JavaScript dat:
 
 ## Oefening 2: Schrikkeljaar
 
-#### Leerdoelen
+### Leerdoelen
 
 - Beslissingen maken
 
-#### Functionele analyse
+### Functionele analyse
 
 De website bevat een invoerveld voor een jaartal en jouw programma bepaalt of het een schrikkeljaar is.
 
-#### Technische analyse
+### Technische analyse
 
 1. Een variabele bevat het jaartal.
 2. Het programma bepaalt of het een schrikkeljaar is volgens de regels:
@@ -68,16 +68,16 @@ De website bevat een invoerveld voor een jaartal en jouw programma bepaalt of he
 
 ## Oefening 3: Simpele Rekenmachine (if-statements)
 
-#### Leerdoelen
+### Leerdoelen
 
 - Beslissingen
 - Geneste `if`-statements
 
-#### Functionele analyse
+### Functionele analyse
 
 Het programma voert een eenvoudige berekening uit met twee getallen en een operator (`+`, `-`, `*`, `/`).
 
-#### Technische analyse
+### Technische analyse
 
 1. Twee variabelen bevatten de getallen.
 2. Een derde variabele bevat de operator.
@@ -87,16 +87,16 @@ Het programma voert een eenvoudige berekening uit met twee getallen en een opera
 
 ## Oefening 4: Simpele Rekenmachine (switch-case)
 
-#### Leerdoelen
+### Leerdoelen
 
 - Beslissingen
 - Gebruik van `switch`
 
-#### Functionele analyse
+### Functionele analyse
 
 Zelfde opdracht als oefening 3, maar nu met een `switch`-statement.
 
-#### Technische analyse
+### Technische analyse
 
 1. Gebruik een `switch`-constructie voor de operator-keuze.
 2. Controleer dat delen door **0** niet gebeurt.
@@ -104,15 +104,15 @@ Zelfde opdracht als oefening 3, maar nu met een `switch`-statement.
 
 ## Oefening 5: Days, Hours and Minutes
 
-#### Leerdoelen
+### Leerdoelen
 
 - Gebruik van de **modulo-operator**
 
-#### Functionele analyse
+### Functionele analyse
 
 Het programma simuleert een klok die een tijdstip berekent na optelling van een bepaalde duur.
 
-#### Technische analyse
+### Technische analyse
 
 1. De gebruiker voert een **startuur** en **startminuten** in.
 2. Twee extra variabelen bevatten de uren en minuten die moeten worden opgeteld.
