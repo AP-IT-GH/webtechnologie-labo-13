@@ -146,24 +146,7 @@ Een student krijgt een cijfer (0-10). Het programma zet dit cijfer om in een tek
 - Als het cijfer buiten de 0-10 range ligt, geef dan een foutmelding.
 - Toon het resultaat in de console.
 
-## Oefening 7: Omrekenen van graden
-
-### Leerdoelen
-- Functies
-- Rekenkundige operaties
-
-### Functionele analyse
-Schrijf een programma dat temperaturen kan omrekenen tussen Celsius en Fahrenheit.
-
-### Technische analyse
-- Vraag de gebruiker om een temperatuur en een eenheid (C of F).
-- Gebruik een functie die:
-    - Celsius omzet naar Fahrenheit met de formule: (C × 9/5) + 32
-    - Fahrenheit omzet naar Celsius met de formule: (F - 32) × 5/9
-- Toon de omgezette waarde in de console.
-- Geef een foutmelding als de eenheid niet correct is ingevoerd.
-
-## Oefening 8: Getal raden
+## Oefening 7: Getal raden
 
 ### Leerdoelen
 - Beslissingen
@@ -180,7 +163,7 @@ Schrijf een programma dat temperaturen kan omrekenen tussen Celsius en Fahrenhei
     - Zo nee, toon: "Helaas, het juiste getal was X."
 - Toon het resultaat in de console.
 
-## Oefening 9: Willekeurig getal
+## Oefening 8: Willekeurig getal
 
 ### Leerdoelen
 - Willekeurige getallen
@@ -200,7 +183,7 @@ Schrijf een programma dat temperaturen kan omrekenen tussen Celsius en Fahrenhei
 
 Zorg dat je deze formule begrijpt. Bekijk hiervoor wat gebeurt als `Math.random()` de zijn kleinste en grootste mogelijke waarden aanneemt.
 
-## Oefening 10: Maaltafelgenerator
+## Oefening 9: Maaltafelgenerator
 
 ### Leerdoelen
 
@@ -221,7 +204,7 @@ Je programma genereert op basis van een hardgecodeerde waarde een maaltafelreeks
 - Gebruik een for-loop om de maaltafelreeks op te bouwen en voeg elk resultaat toe aan de string, gescheiden door een ", ".
 - Print de maaltafel uit in de console.
 
-## Oefening 11: Raster Generator
+## Oefening 10: Raster Generator
 
 ### Leerdoelen
 
@@ -243,7 +226,7 @@ Je programma genereert een raster van kruisjes op basis van hardgecodeerde waard
 
 ---
 
-## Oefening 12: Raad het Getal
+## Oefening 11: Raad het Getal
 
 ### Leerdoelen
 
@@ -263,7 +246,7 @@ Het programma laat de gebruiker een getal raden tussen 0 en 30. De invoer is har
 - Geef aan of het getal hoger of lager moet zijn.
 - Stop zodra het juiste getal geraden is.
 
-## Oefening 13: Som van Even Getallen
+## Oefening 12: Som van Even Getallen
 
 ### Leerdoelen
 
@@ -283,7 +266,7 @@ Je programma berekent de som van alle even getallen tot en met een bepaalde hard
 - Controleer of het getal even is en tel het op bij de som.
 - Print de uiteindelijke som uit.
 
-## Oefening 14: Aftellen
+## Oefening 13: Aftellen
 
 ### Leerdoelen
 
@@ -303,7 +286,7 @@ Je programma telt af vanaf een hardcoded startwaarde tot nul en print bij elke s
 - Stop zodra het getal nul bereikt.
 
 
-## Oefening 15: Fibonacci-reeks
+## Oefening 14: Fibonacci-reeks
 
 ### Leerdoelen
 
