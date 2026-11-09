@@ -23,7 +23,7 @@ webtechnologie/
 
 - Gebruik steeds JS modules om globale variabelen te vermijden (`<script type="module" src="./path/to/script.js"></script>`)
 - Volg de [Coding Guidelines](https://webtechnologie.programmeren-ap.be/coding-guidelines)
-- In dit labo vraag je invoer met `prompt()`. De uitleg daarover, samen met `parseInt()` en `isNaN()`, staat bij [Console en prompt](https://webtechnologie.programmeren-ap.be/javascript/basisconcepten/console-en-prompt)
+- In dit labo vraag je invoer met `prompt()`. De uitleg daarover, samen met `parseInt()` en `isNaN()`, staat bij [Invoer met prompt()](https://webtechnologie.programmeren-ap.be/javascript/basisconcepten/console-en-prompt#invoer-met-prompt)
 
 ## Een willekeurig getal met `Math.random()`
 
