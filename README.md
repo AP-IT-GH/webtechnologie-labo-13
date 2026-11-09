@@ -23,46 +23,11 @@ webtechnologie/
 
 - Gebruik steeds JS modules om globale variabelen te vermijden (`<script type="module" src="./path/to/script.js"></script>`)
 - Volg de [Coding Guidelines](https://webtechnologie.programmeren-ap.be/coding-guidelines)
+- In dit labo vraag je invoer met `prompt()`. De uitleg daarover, samen met `parseInt()` en `isNaN()`, staat bij [Console en prompt](https://webtechnologie.programmeren-ap.be/javascript/basisconcepten/console-en-prompt)
 
-## Twee hulpmiddelen voor dit labo
+## Een willekeurig getal met `Math.random()`
 
-In een aantal oefeningen vraag je invoer aan de gebruiker of heb je een willekeurig getal nodig. De functies daarvoor leer je pas grondig kennen in labo 15, maar je mag ze hier al gebruiken.
-
-### Invoer vragen met `prompt()`
-
-`prompt()` toont een venstertje waarin de gebruiker iets kan typen, en geeft terug wat die getypt heeft.
-
-```js
-const name = prompt("Wat is je naam?");
-console.log(`Hallo ${name}!`);
-```
-
-**`prompt()` geeft altijd een string terug**, ook als de gebruiker een getal typt. Wil je ermee rekenen, zet de invoer dan eerst om met `parseInt()` (geheel getal) of `Number()` (ook kommagetallen).
-
-```js
-const age = parseInt(prompt("Hoe oud ben je?"), 10);
-console.log(age + 1); // zonder parseInt zou dit "171" geven in plaats van 18
-```
-
-Het tweede argument van `parseInt` is de **radix** (het talstelsel). Gebruik altijd `10`, dan lees je gewone decimale getallen.
-
-Typt de gebruiker iets dat geen getal is, dan krijg je `NaN` (Not a Number) terug. Dat controleer je met `isNaN()`:
-
-```js
-if (isNaN(age)) {
-    console.log("Dat is geen geldig getal!");
-}
-```
-
-**`prompt()` is niet verplicht.** Moet je een oefening een paar keer na elkaar testen, dan wordt dat venstertje wegklikken snel vervelend. Je mag de invoer dus net zo goed hardcoderen in een variabele:
-
-```js
-const age = 20; // in plaats van parseInt(prompt("Hoe oud ben je?"), 10)
-```
-
-De rest van de oefening blijft dan identiek. Hou er wel rekening mee dat je zo niet alle gevallen test: met een hardgecodeerd getal kom je nooit bij je `isNaN()`-controle terecht. Wissel dus af en toe van waarde om ook je foutmeldingen te zien werken.
-
-### Een willekeurig getal met `Math.random()`
+In een paar oefeningen heb je een willekeurig getal nodig.
 
 `Math.random()` geeft een willekeurig kommagetal tussen 0 en 1. Nul kan er uitkomen, 1 nooit.
 
