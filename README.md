@@ -23,9 +23,62 @@ webtechnologie/
 
 - Gebruik steeds JS modules om globale variabelen te vermijden (`<script type="module" src="./path/to/script.js"></script>`)
 - Volg de [Coding Guidelines](https://webtechnologie.programmeren-ap.be/coding-guidelines)
-- Vergelijk **altijd** met `===` en `!==`, nooit met `==` of `!=`. Waarom lees je bij [Vergelijkingen](https://webtechnologie.programmeren-ap.be/javascript/beslissingen/vergelijkingen).
 
-In een aantal oefeningen vraag je invoer met `prompt()` of genereer je een willekeurig getal met `Math.random()`. Hoe die twee werken, staat samengevat bij de [theorie van labo 13](https://webtechnologie.programmeren-ap.be/labos/labo13).
+## Twee hulpmiddelen voor dit labo
+
+In een aantal oefeningen vraag je invoer aan de gebruiker of heb je een willekeurig getal nodig. De functies daarvoor leer je pas grondig kennen in labo 15, maar je mag ze hier al gebruiken.
+
+### Invoer vragen met `prompt()`
+
+`prompt()` toont een venstertje waarin de gebruiker iets kan typen, en geeft terug wat die getypt heeft.
+
+```js
+const name = prompt("Wat is je naam?");
+console.log(`Hallo ${name}!`);
+```
+
+**`prompt()` geeft altijd een string terug**, ook als de gebruiker een getal typt. Wil je ermee rekenen, zet de invoer dan eerst om met `parseInt()` (geheel getal) of `Number()` (ook kommagetallen).
+
+```js
+const age = parseInt(prompt("Hoe oud ben je?"), 10);
+console.log(age + 1); // zonder parseInt zou dit "171" geven in plaats van 18
+```
+
+Het tweede argument van `parseInt` is de **radix** (het talstelsel). Gebruik altijd `10`, dan lees je gewone decimale getallen.
+
+Typt de gebruiker iets dat geen getal is, dan krijg je `NaN` (Not a Number) terug. Dat controleer je met `isNaN()`:
+
+```js
+if (isNaN(age)) {
+    console.log("Dat is geen geldig getal!");
+}
+```
+
+**`prompt()` is niet verplicht.** Moet je een oefening een paar keer na elkaar testen, dan wordt dat venstertje wegklikken snel vervelend. Je mag de invoer dus net zo goed hardcoderen in een variabele:
+
+```js
+const age = 20; // in plaats van parseInt(prompt("Hoe oud ben je?"), 10)
+```
+
+De rest van de oefening blijft dan identiek. Hou er wel rekening mee dat je zo niet alle gevallen test: met een hardgecodeerd getal kom je nooit bij je `isNaN()`-controle terecht. Wissel dus af en toe van waarde om ook je foutmeldingen te zien werken.
+
+### Een willekeurig getal met `Math.random()`
+
+`Math.random()` geeft een willekeurig kommagetal tussen 0 en 1. Nul kan er uitkomen, 1 nooit.
+
+Om daar een geheel getal van te maken tussen een minimum en een maximum (beide inbegrepen), gebruik je:
+
+```js
+const randomNumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+```
+
+`Math.floor()` rondt naar beneden af. Een voorbeeld met een dobbelsteen:
+
+```js
+const dice = Math.floor(Math.random() * (6 - 1 + 1)) + 1; // een getal van 1 tot en met 6
+```
+
+**Waarom die `+ 1`?** `Math.random() * 6` geeft een getal vanaf 0 tot net onder 6. Na `Math.floor()` hou je 0, 1, 2, 3, 4 of 5 over: zes mogelijkheden. Tel je er `1` bij op, dan krijg je 1 tot en met 6. Zou je `(6 - 1)` schrijven in plaats van `(6 - 1 + 1)`, dan rolt je dobbelsteen nooit een 6.
 
 ## Oefening 1: Hello World!
 
@@ -241,13 +294,7 @@ Zelfde spel als oefening 7, maar nu kiest het programma zelf een **willekeurig**
 - Genereer een willekeurig geheel getal tussen 1 en 10 (beide inbegrepen) en sla het op in `answer`.
 - De rest van het programma blijft hetzelfde als in oefening 7.
 
-**Hint**: `Math.random()` geeft altijd een kommagetal tussen 0 en 1 terug (soms exact 0, maar nooit exact 1). Met de volgende formule maak je daar een geheel getal van tussen een minimum en een maximum, beide inbegrepen:
-
-```js
-Math.floor(Math.random() * (maximum - minimum + 1)) + minimum
-```
-
-Zorg dat je deze formule begrijpt. Bekijk hiervoor wat er gebeurt als `Math.random()` zijn kleinste en grootste mogelijke waarde aanneemt. Let in het bijzonder op de `+ 1`: zonder die `+ 1` kan het maximum nooit uitkomen.
+**Hint**: de formule staat bovenaan bij [Een willekeurig getal met `Math.random()`](#een-willekeurig-getal-met-mathrandom). Zorg dat je ze begrijpt: bekijk wat er gebeurt als `Math.random()` zijn kleinste en grootste mogelijke waarde aanneemt.
 
 ### Voorbeeldinteractie
 
